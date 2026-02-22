@@ -28,6 +28,15 @@ public class Main {
         p1.hello();
         int result = p3.sum(10,20);
         System.out.println(result);
-
+        p1.test(0);
+        p1.modify(p1);
+        int a = 10;
+        int b = 20;
+        p1.swap(a,b);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(p1.name);
+        p1.setName("LBW");
+        System.out.println(p1.name);
     }
 }
