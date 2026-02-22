@@ -21,14 +21,10 @@ public class Main {
         it.floatprintf(5);
         new Person();
         Person p1 = new Person();
-        Person p2 = p1;
         Person p3 = new Person();
         p1.name = "cypher";
         p1.age = 18;
         p1.printInfo();
-        p2.name = "tim";
-        p2.age = 24;
-        p2.printInfo();
         p1.hello();
         int result = p3.sum(10,20);
         System.out.println(result);
