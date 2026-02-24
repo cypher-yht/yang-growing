@@ -1,42 +1,11 @@
 public class Main {
-    //定义java文件署名类似书本封面包括了书名（class *name*）和作者（注释）
-    /// 定义Java文件署名类似书本封面包括了书名（class *
-    ///
-    /// @author cypher
-    /// @version 0.0.1
-    /// # 一级标题
-    /// - 内容1
-    /// - 内容2
-    public static  void main(String[] args)
-    /*用于辨明文件类型暴露接口使jvm找到该文件并编译
-    * 多行注释展示
-    * 一般上文作者和版本用markdown和多行注释
-    * 鼠标放在markdown注释处可以查看markdown格式
-    */
-    {
-        System.out.println("Hello World");
-        //用于输出hello world.
-        VariablePractice it = new VariablePractice();
-        it.intprintf(5);
-        it.floatprintf(5);
-        new Person();
-        Person p1 = new Person();
-        Person p3 = new Person();
-        p1.name = "cypher";
-        p1.age = 18;
-        p1.printInfo();
-        p1.hello();
-        int result = p3.sum(10,20);
-        System.out.println(result);
-        p1.test(0);
-        p1.modify(p1);
-        int a = 10;
-        int b = 20;
-        p1.swap(a,b);
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(p1.name);
-        p1.setName("LBW");
-        System.out.println(p1.name);
+    public static  void main(String[] args){
+    Person ps=new Person("yong",18,"one","home");
+    Person p2=new Person("yong","one","home");
+        System.out.println(ps);
+        System.out.println(ps.toString());
+        System.out.println(p2);
+        System.out.println(p2.toString());
+
     }
 }
